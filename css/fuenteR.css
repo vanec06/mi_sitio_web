@@ -1,0 +1,30 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 900;
+    background-color: rgba(22, 22, 199, 0.897);
+}
+
+h1 {
+    font-size: 9em;
+    font-family: "Digital", "sans-serif";
+    color: aliceblue;
+}
+
+
+
+/* allura-regular - latin */
+@font-face {
+    font-family: 'Digital';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/DS-DIGI.TTF');
+    /* IE9 Compat Modes */
+    src: local(''),
+        /* IE6-IE8 */
+        url('../fonts/DS-DIGI.TTF') 
+        
+}
