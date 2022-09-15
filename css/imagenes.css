@@ -11,3 +11,13 @@ h2 {
 .nature{
     height: 26.2em;
 }
+
+.title{
+    text-align: center;
+}
+
+.box-imagen{
+    display: inline-flex;
+    padding-top: 11px;
+    padding-left: 20px;
+}
