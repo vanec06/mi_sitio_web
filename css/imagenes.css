@@ -1,5 +1,5 @@
 .imagenes-100 {
-    width: 33%;
+    width: 90%;
 }
 h1 {
     text-align: center;
@@ -8,16 +8,17 @@ h1 {
 h2 {
     text-align: center;
 }
-.nature{
-    height: 26.2em;
-}
+
 
 .title{
     text-align: center;
 }
-
+.nature{
+height:85%;
+}
 .box-imagen{
     display: inline-flex;
     padding-top: 11px;
     padding-left: 20px;
+   
 }
