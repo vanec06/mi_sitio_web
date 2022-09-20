@@ -31,8 +31,18 @@ height:61%;
     width:25em ;
     
 }
-
+.pa1{
+    width: 25em;
+    padding-left: 19px;
+    text-align: justify;
+}
 .Dog {
 height:64% ;
 
+}
+
+.pa2{
+    width: 25em;
+    padding-left: 19px;
+    text-align: justify;
 }
