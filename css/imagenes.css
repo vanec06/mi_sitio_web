@@ -13,12 +13,26 @@ h2 {
 .title{
     text-align: center;
 }
+.pa {
+    text-align: justify;
+    width: 26em; 
+}
 .nature{
-height:85%;
+height:61%;
 }
 .box-imagen{
     display: inline-flex;
     padding-top: 11px;
     padding-left: 20px;
    
+}
+.Colombia {
+    height: 63%;
+    width:25em ;
+    
+}
+
+.Dog {
+height:64% ;
+
 }
