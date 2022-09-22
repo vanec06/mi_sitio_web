@@ -4,15 +4,20 @@
     padding: 0;
 }
 
- {
-
-.tex{
-    display:inline-block
+ 
+.tex {
+    
     background-color: rgb(3, 173, 145);
+    text-align: right;
+    
+    
     
 }
 
 li {
     list-style: none ;
     font-size: 2em;
+    margin: 20px;
+display: inline-block;
+
 }
