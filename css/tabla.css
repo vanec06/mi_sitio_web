@@ -1,0 +1,28 @@
+.table-style {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+   
+    
+}
+
+th , td {
+    border: 1px solid black;
+   padding: 10px 12px;
+  
+}
+
+table {
+    border-collapse: collapse;
+
+    }
+h1 {
+    text-align: center;
+}
+thead {
+     background-color: rgb(226, 43, 211);
+}
+ td {
+    background-color: rgb(255, 108, 181);
+ }
+
