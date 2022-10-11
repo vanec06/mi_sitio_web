@@ -1,5 +1,5 @@
 .table-style {
-    display: flex;
+    display: inline-block;
     justify-content:  center;
     align-items: center;
    
@@ -25,4 +25,3 @@ thead {
  td {
     background-color: rgb(255, 108, 181);
  }
-
