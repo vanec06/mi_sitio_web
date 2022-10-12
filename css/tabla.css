@@ -25,3 +25,33 @@ thead {
  td {
     background-color:whitesmoke;
  }
+.ta {
+background-color: rgb(0, 139, 139);
+color: white;
+ }
+ .a{
+background-color: green;
+color: white;
+ }
+ .e {
+background-color: rgb(43, 177, 217);
+color: white;
+ }
+ .i{
+background-color: orangered;
+color: white;
+ }
+ .o{
+background-color: blueviolet;
+color: white;
+ }
+ .x{
+    color: red;
+ }
+.b {
+    color: greenyellow;
+   
+ }
+ .si {
+    text-align: center;
+ }
