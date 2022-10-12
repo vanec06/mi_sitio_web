@@ -1,5 +1,5 @@
 .table-style {
-    display: inline-block;
+    display: flex;
     justify-content:  center;
     align-items: center;
    
@@ -16,12 +16,12 @@ table {
     border-collapse: collapse;
 
     }
-h1 {
+h1,h2 {
     text-align: center;
 }
 thead {
-     background-color: rgb(226, 43, 211);
+     background-color:rgb(41, 237, 237)
 }
  td {
-    background-color: rgb(255, 108, 181);
+    background-color:whitesmoke;
  }
