@@ -12,4 +12,12 @@ input[type="text"] {
 input[type="text"]:focus  {
 outline: none;
 }
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ta{
+    text-align: center;
+}
 
