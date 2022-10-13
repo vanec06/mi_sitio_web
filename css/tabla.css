@@ -7,13 +7,14 @@
 }
 
 th , td {
-    border: 1px solid black;
+    border: 1px solid rgb(211, 205, 205);
    padding: 10px 12px;
   
 }
 
 table {
     border-collapse: collapse;
+    
 
     }
 h1,h2 {
@@ -28,13 +29,14 @@ thead {
 .ta {
 background-color: rgb(0, 139, 139);
 color: white;
+
  }
  .a{
 background-color: green;
 color: white;
  }
  .e {
-background-color: rgb(43, 177, 217);
+background-color: rgb(19, 148, 187);
 color: white;
  }
  .i{
@@ -42,14 +44,14 @@ background-color: orangered;
 color: white;
  }
  .o{
-background-color: blueviolet;
+background-color: rgb(93, 32, 150);
 color: white;
  }
  .x{
     color: red;
  }
 .b {
-    color: greenyellow;
+    color: rgb(22, 192, 17);
    
  }
  .si {
