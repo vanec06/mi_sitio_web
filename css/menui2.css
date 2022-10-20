@@ -1,0 +1,20 @@
+.icon-style {
+    color:rgb(64, 64, 64 ,.8);
+    font-size: 1.2 em;
+    padding-right: 5px;
+}
+nav {
+    background-color: gainsboro;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
