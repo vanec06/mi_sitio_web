@@ -1,0 +1,43 @@
+.ta {
+    display: inline-block;
+    border-right: 2PX solid orangered;
+    background-color: rgb(253, 253, 253);
+    padding: 8px 10px;
+    margin-left: 20 px;
+
+ }
+.ta:hover{
+background-color: rgb(220, 220, 220);
+}
+ a {
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ nav{
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+ }
+ .tex{
+  display:block;  
+  margin: 15px;
+  border: 5px solid transparent;
+  background-color: rgb(87, 87, 87);
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  
+ }
+ .col:hover{
+    background-color: rgb(125, 122, 122);
+ }
+ .col{
+    color: white;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+ }
+ .la{
+    margin-left: 90px
+ }
