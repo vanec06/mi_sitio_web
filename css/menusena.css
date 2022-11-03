@@ -22,7 +22,7 @@ background-color: rgb(220, 220, 220);
  }
  .tex{
   display:block;  
-  margin: 15px;
+  margin: 5px;
   border: 5px solid transparent;
   background-color: rgb(87, 87, 87);
   width: 250px;
@@ -35,9 +35,13 @@ background-color: rgb(220, 220, 220);
  }
  .col{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
  }
  .la{
-    margin-left: 90px
+    margin-left: 370px
+
+ }
+ li{
+   cursor: pointer;
  }
