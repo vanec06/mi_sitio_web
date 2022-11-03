@@ -1,4 +1,4 @@
-let botonMenujs = document.getElementById("botonMenu");
+let botonMenujs = document.getElementById("Nosotros");
 
 
 botonMenujs.addEventListener("click", function() {
