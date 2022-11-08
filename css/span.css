@@ -1,6 +1,6 @@
 .letter-slyle {
     /* */
-font-size:2em ;
+font-size:3em ;
 color: black;
 }
 .name-style {
@@ -21,7 +21,7 @@ h2.name-style {
 }
 /* ejemplo de estilo utilizando un id*/
 #textstyle {
-    color: violet;
+    color: rgb(151, 51, 151);
 }
 
 
