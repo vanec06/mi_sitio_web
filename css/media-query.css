@@ -59,8 +59,13 @@ position: fixed;
 
 }
 .main-lu{
+  
+    display: none;
+}
+.main-menu-visible{
+    display: block;
     background-color: rgb(110, 107, 107, 0.9);
-    margin-top: 80px;
+    margin-top: 81px;
     padding: 0;
 }
 .item-li{
