@@ -19,9 +19,12 @@ ul{
     width: 100%;
     text-align: right;
     height: 80px;
+   
+    
 
 }
 li{
+    cursor: pointer;
     padding: 35px 35px;
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.4em;
