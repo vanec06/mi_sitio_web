@@ -33,3 +33,9 @@ li{
 .last-item{
     margin-right: 80px;
 }
+.ti{
+    text-align: center;
+}
+.pa{
+    text-align: justify;
+}
