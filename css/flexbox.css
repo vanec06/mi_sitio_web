@@ -1,104 +1,121 @@
 h1 {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em; 
+    font-size: 3em;
 }
-h2{
+
+h2 {
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.box{
+
+.box {
     width: 400px;
     height: 400px;
-    background-color:rgb(171, 87, 226) ;
+    background-color: rgb(171, 87, 226);
     margin: 10px 10px;
     color: white;
     font-size: 3em;
 }
-.box-direction{
+
+.box-direction {
     display: flex;
     background-color: rgb(190, 243, 243);
     flex-direction: row;
 }
-.box-wrap{
-display: flex;
-background-color:rgb(190, 243, 243);
-flex-direction: row;
-flex-wrap: wrap;
-}
-.box-nowrap{
+
+.box-wrap {
     display: flex;
-    background-color:rgb(190, 243, 243);
+    background-color: rgb(190, 243, 243);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-nowrap {
+    display: flex;
+    background-color: rgb(190, 243, 243);
     flex-flow: row nowrap;
 }
-.box-wrap-continuo{
+
+.box-wrap-continuo {
     display: flex;
     flex-flow: column wrap;
     height: 415px;
-    overflow-x:scroll ;
+    overflow-x: scroll;
     overflow-y: hidden;
     margin-bottom: 40px;
 }
-.box-space-between{
+
+.box-space-between {
     display: flex;
     background-color: blueviolet;
     justify-content: space-between;
 }
-.box-space-around{
+
+.box-space-around {
     height: 420px;
     display: flex;
     background-color: blueviolet;
     justify-content: space-around;
 }
-.box-space-Evenly{
+
+.box-space-Evenly {
     display: flex;
     height: 420px;
     background-color: blueviolet;
     justify-content: space-evenly;
 }
-.box-flex-start{
+
+.box-flex-start {
     display: flex;
     height: 420px;
     background-color: blueviolet;
     justify-content: flex-start;
-   
+
 }
-.box-flex-end{
+
+.box-flex-end {
     display: flex;
     height: 420px;
     background-color: blueviolet;
     flex-flow: row-reverse;
 }
-.box-flex-center{
+
+.box-flex-center {
     display: flex;
     height: 420px;
     background-color: blueviolet;
     justify-content: center;
 }
-.box-aling-start{
+
+.box-aling-start {
     display: flex;
     height: 500px;
     background-color: blueviolet;
-   align-items: flex-start;
+    align-items: flex-start;
 }
-.box41{
+.box41 {
     height: 480px;
 }
-.box42{
+
+.box42 {
     height: 210px;
 }
-.boxs43{
+
+.boxs43 {
     height: 500spx;
 }
-.box-aling-end{
+.box-aling-end {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border-bottom: 2px solid rgb(64, 64, 64,.8);
+    border-bottom: 2px solid black;
     width: 750px;
-   box-shadow: 0 2px 5px rgb(64, 64, 64,.6);
+    box-shadow: 0 2px 5px rgba(136, 57, 226, 0.6);
+    border-left: 2px solid black;
 }
-.box-box-aling{
+
+.box-box-aling {
     display: flex;
     width: 130px;
     background-color: blue;
@@ -107,32 +124,39 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.box44{
+
+.box44 {
     height: 350px;
     background-color: cyan;
 }
-.box45{
-  height: 210px;
-  background-color: darkviolet;
+
+.box45 {
+    height: 210px;
+    background-color: darkviolet;
 }
-.box46{
+
+.box46 {
     background-color: chartreuse;
     height: 60px;
 }
-.box47{
+
+.box47 {
     background-color: crimson;
     height: 390px;
 }
-.box48{
+
+.box48 {
     background-color: rgb(235, 30, 167);
     height: 280px;
 }
-.box-main-aling{
+
+.box-main-aling {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
-.texto-grafica{
-  transform: rotate(-90deg);
+
+.texto-grafica {
+    transform: rotate(-90deg);
     font-size: 1.2em;
     height: 30px;
     width: 250px;
@@ -141,4 +165,13 @@ flex-wrap: wrap;
     position: absolute;
     margin-top: 9.5em;
     font-family: cursive;
+}
+hr {
+    margin-bottom: 35.3px;
+}
+
+.lineas {
+    position: absolute;
+    width: 750px;
+    z-index: -1;
 }

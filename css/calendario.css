@@ -1,0 +1,21 @@
+
+
+.contenedor{
+display: grid;
+grid-template-columns: 50px 50px 50px 50px 50px 50px 50px ;
+grid-template-rows: 60px 60px 60px 60px ;
+background-color: rgb(127, 240, 255);
+width: 350.4px;
+height: 300px;
+
+}
+.box{
+    border: 2px solid rgb(255, 255, 255);
+}
+.box1{
+ 
+    grid-column-end: 6;
+}
+.box7{
+    background-color: rgb(186, 168, 202);
+}
