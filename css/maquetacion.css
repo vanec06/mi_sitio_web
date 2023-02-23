@@ -1,0 +1,40 @@
+.main-box{
+   font-size: 3vh;
+    display: grid;
+    color: white;
+  grid-template: 'logo  inicio   busqueda   milista   originales  peliculas  series ' 
+    "             img   img      img        img       img         img        img    " 600px/
+                  300px  300px     300px       300px      300px        300px       300  |px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(255, 0, 0);
+}
+.inicio{
+    grid-area: inicio;
+    background-color: rgb(255, 123, 0);
+}
+.busqueda{
+    grid-area:busqueda;
+    background-color: rgb(255, 208, 0);
+}
+.milista{
+    grid-area: milista;
+    background-color: rgb(226, 223, 43);
+}
+.originales{
+    grid-area: originales;
+    background-color: rgb(156, 226, 43);
+}
+.peliculas{
+    grid-area: peliculas;
+    background-color: rgb(136, 255, 0);
+}
+.series{
+    grid-area: series;
+    background-color: rgb(127, 255, 176);
+}
+.img{
+    grid-area: img;
+    background-color: aqua;
+}
