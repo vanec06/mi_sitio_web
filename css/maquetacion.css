@@ -1,40 +1,59 @@
-.main-box{
-   font-size: 3vh;
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 8vh;
+}
+
+.contenedor{
+   
+   border: 3px solid black;
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 30px ;  
     display: grid;
+    grid-template: "header         header         header"         100px
+                   "img-principal  img-principal  img-principal"  350px
+                   "boton-1         boton-2         boton-3"         auto  /
+                    1fr            1fr            1fr;
+}
+.header,.headerr, .img-principal, .img-article {
+    border-radius: 10px;
     color: white;
-  grid-template: 'logo  inicio   busqueda   milista   originales  peliculas  series ' 
-    "             img   img      img        img       img         img        img    " 600px/
-                  300px  300px     300px       300px      300px        300px       300  |px;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.logo{
-    grid-area: logo;
-    background-color: rgb(255, 0, 0);
+.header{
+    grid-area: header;
+    background: rgb(204, 8, 1);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 15px;
 }
-.inicio{
-    grid-area: inicio;
-    background-color: rgb(255, 123, 0);
+.img-principal {
+    grid-area: img-principal;
+    background: darkcyan;
 }
-.busqueda{
-    grid-area:busqueda;
-    background-color: rgb(255, 208, 0);
+.img-article {
+    height: 250px;
+    background: rgb(66, 65, 65);
 }
-.milista{
-    grid-area: milista;
-    background-color: rgb(226, 223, 43);
+p{
+    margin-top: 1.5em;
+    line-height: 1.4em;
+    font-size: 1.5em;
+    text-align: justify;
 }
-.originales{
-    grid-area: originales;
-    background-color: rgb(156, 226, 43);
+.boton-1 {
+    grid-area: boton-1;
 }
-.peliculas{
-    grid-area: peliculas;
-    background-color: rgb(136, 255, 0);
+.boton-2 {
+    grid-area: boton-2;
 }
-.series{
-    grid-area: series;
-    background-color: rgb(127, 255, 176);
-}
-.img{
-    grid-area: img;
-    background-color: aqua;
+.boton-3 {
+    grid-area: boton-3;
 }
