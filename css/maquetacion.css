@@ -8,7 +8,7 @@ h1{
 }
 
 .contenedor{
-   
+
    border: 3px solid black;
     width: 80%;
     margin: 0 auto;
@@ -19,7 +19,7 @@ h1{
                    "boton-1         boton-2         boton-3"         auto  /
                     1fr            1fr            1fr;
 }
-.header,.headerr, .img-principal, .img-article {
+.header,.img-principal, .img-article {
     border-radius: 10px;
     color: white;
     font-size: 1.8em;
@@ -56,4 +56,27 @@ p{
 }
 .boton-3 {
     grid-area: boton-3;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px){
+   .contenedor {
+        width: 85%;
+        grid-template: "header         header               header "         90px
+                       "img-principal  img-principal        img-principal"   250px
+                       "boton-1         boton-2             boton-3   "      auto /
+                        1fr            1fr                  1fr ; 
+    }
+}
+@media only screen and (max-width: 640px){
+    .contenedor {
+        width: 85%;
+        grid-template: "header"         80px
+                       "img-principal"  260px
+                       "boton-1"          auto 
+                       "boton-2"          auto
+                       "boton-3"          auto /
+                        1fr;
+    }
+    .boton {
+        font-size: .8em;
+    }
 }
