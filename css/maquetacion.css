@@ -29,7 +29,7 @@ h1{
 }
 .header{
     grid-area: header;
-    background: rgb(204, 8, 1);
+    background: rgb(211, 12, 5);
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 15px;
