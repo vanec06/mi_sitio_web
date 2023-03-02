@@ -9,7 +9,7 @@ h1{
 
 .contenedor{
 
-   border: 3px solid black;
+   border: 3px solid rgb(23, 158, 179);
     width: 80%;
     margin: 0 auto;
     grid-gap: 30px ;  
