@@ -14,10 +14,10 @@ h1{
     margin: 0 auto;
     grid-gap: 30px ;  
     display: grid;
-    grid-template: "header         header         header"         100px
+    grid-template: "header         header         header"         120px
                    "img-principal  img-principal  img-principal"  350px
-                   "boton-1         boton-2         boton-3"         auto  /
-                    1fr            1fr            1fr;
+                   "boton-1         boton-2         boton-3"       auto  /
+                    1fr              1fr             1fr;
 }
 .header,.img-principal, .img-article {
     border-radius: 10px;
@@ -33,18 +33,21 @@ h1{
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .img-principal {
     grid-area: img-principal;
     background: darkcyan;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .img-article {
     height: 250px;
     background: rgb(66, 65, 65);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 p{
-    margin-top: 1.5em;
-    line-height: 1.4em;
+    margin-top: 1.8em;
+    line-height: 1.5em;
     font-size: 1.5em;
     text-align: justify;
 }
@@ -57,16 +60,26 @@ p{
 .boton-3 {
     grid-area: boton-3;
 }
-@media only screen and (min-width: 641px) and (max-width: 1024px){
+.tablet,.smartphone{
+    display: none;
+}
+@media  screen and (min-width: 641px) and (max-width: 1024px){
    .contenedor {
         width: 85%;
-        grid-template: "header         header               header "         90px
-                       "img-principal  img-principal        img-principal"   250px
-                       "boton-1         boton-2             boton-3   "      auto /
-                        1fr            1fr                  1fr ; 
+        grid-template: "header         header                "         90px
+                       "img-principal  img-principal      "   250px
+                       "boton-1         boton-2             "      auto
+                       "boton-3        empty"                                  auto/
+                        1fr            1fr                   ; 
+    }
+    .tablet{
+        display: block;
+    }
+    .smartphone,.pc{
+        display: none;
     }
 }
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 641px){
     .contenedor {
         width: 85%;
         grid-template: "header"         80px
@@ -76,7 +89,11 @@ p{
                        "boton-3"          auto /
                         1fr;
     }
-    .boton {
-        font-size: .8em;
+    
+    .tablet,.pc{
+        display: none;
+    }
+    .smartphone{
+        display: block;
     }
 }
