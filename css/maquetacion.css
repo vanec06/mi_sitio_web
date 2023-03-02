@@ -66,11 +66,11 @@ p{
 @media  screen and (min-width: 641px) and (max-width: 1024px){
    .contenedor {
         width: 85%;
-        grid-template: "header         header                "         90px
-                       "img-principal  img-principal      "   250px
-                       "boton-1         boton-2             "      auto
-                       "boton-3        empty"                                  auto/
-                        1fr            1fr                   ; 
+        grid-template: "header            header               "      90px
+                       "img-principal     img-principal        "      250px
+                       "boton-1           boton-2              "      auto
+                       "boton-3           empty"                       auto/
+                        1fr               1fr                  ; 
     }
     .tablet{
         display: block;
@@ -82,8 +82,9 @@ p{
 @media only screen and (max-width: 641px){
     .contenedor {
         width: 85%;
-        grid-template: "header"         80px
-                       "img-principal"  260px
+        grid-template: "header"          
+         80px
+                       "img-principal"    260px
                        "boton-1"          auto 
                        "boton-2"          auto
                        "boton-3"          auto /
