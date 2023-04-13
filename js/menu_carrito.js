@@ -84,6 +84,28 @@ btnSumar.addEventListener("click" , function(){
 
     
 }); 
+btnRestar.addEventListener("click" , function(){
+    let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+    // leemos el numero de la interfaz
+    // convertimos el numero leido en texto leido
+    // añadimos uno al valor total
+    // convertimos el resultado de las operaciones a texto
+    // agreagamos el nuevo valor*/
+
+    let nodeToAdd = document.createElement("p");
+
+    let nodeText  = document.createTextNode("6");
+ 
+    numeroElementos.innerHTML="";
+    let numeroElementosInt = parseInt(numeroElementosTxt);
+    let totalElementosInt = numeroElementosInt - 1;
+    let totalElementosTxt = totalElementosInt.toString();
+    numeroElementos.innerHTML = totalElementosTxt;
+
+
+
+    
+}); 
 
 
 
