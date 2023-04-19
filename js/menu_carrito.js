@@ -62,50 +62,25 @@ imgMini4.addEventListener("click", function(){
  let numeroElementos = document.getElementById("numeroElementos");
  let btnCantidad = document.getElementById ("btnCantidad");
  let btnSumar = document.getElementById("btnSumar");
-btnSumar.addEventListener("click" , function(){
-    let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
-    // leemos el numero de la interfaz
-    // convertimos el numero leido en texto leido
-    // añadimos uno al valor total
-    // convertimos el resultado de las operaciones a texto
-    // agreagamos el nuevo valor*/
+ let click =0;
 
-    let nodeToAdd = document.createElement("p");
+ btnSumar.addEventListener("click", function(){
+if (click ==30) {
+    click =30;
+}else{
+    click = click +1
+    numeroElementos.innerHTML=click
+}
+ })
 
-    let nodeText  = document.createTextNode("6");
-    
-    numeroElementos.innerHTML="";
-    let numeroElementosInt = parseInt(numeroElementosTxt);
-    let totalElementosInt = numeroElementosInt + 1;
-    let totalElementosTxt = totalElementosInt.toString();
-    numeroElementos.innerHTML = totalElementosTxt;
-
-
-
-    
-}); 
-btnRestar.addEventListener("click" , function(){
-    let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
-    // leemos el numero de la interfaz
-    // convertimos el numero leido en texto leido
-    // añadimos uno al valor total
-    // convertimos el resultado de las operaciones a texto
-    // agreagamos el nuevo valor*/
-
-    let nodeToAdd = document.createElement("p");
-
-    let nodeText  = document.createTextNode("6");
- 
-    numeroElementos.innerHTML="";
-    let numeroElementosInt = parseInt(numeroElementosTxt);
-    let totalElementosInt = numeroElementosInt - 1;
-    let totalElementosTxt = totalElementosInt.toString();
-    numeroElementos.innerHTML = totalElementosTxt;
-
-
-
-    
-}); 
+ btnRestar.addEventListener("click", function(){
+    if (click ==0) {
+        click =0;
+    }else{
+        click = click -1
+        numeroElementos.innerHTML=click
+    }
+ });
 
 
 

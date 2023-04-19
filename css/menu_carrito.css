@@ -1,5 +1,7 @@
 *{
     font-family:  Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 h1{
 text-align: center;
@@ -81,4 +83,85 @@ cursor: pointer;
 .cant-box{
     display: inline-flex;
     flex-direction: row;
+}
+.info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 90px 0px 90px 90px;
+ 
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.bottom {
+    margin-bottom: 15px;
+}
+
+.number-flex {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.dto {
+    margin-top: 7px;
+    border-radius: 5px;
+    background-color: rgb(255, 226, 205);
+    color: rgb(248, 103, 7);
+    font-weight: bold;
+    height: 25px;
+    padding: 5px;
+}
+
+
+.counter {
+    display: inline-flex;
+}
+.less {
+    padding-inline: 25px;
+    grid-area: less;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 81, 0);
+}
+
+
+.add {
+    border-radius: 8px;
+    border: none;
+    height: 58px;
+    margin-left: 30px;
+    width: 270px;
+    background-color: rgb(255, 123, 0);
+}
+
+.txt-add {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: whitesmoke;
+   
+}
+.car{
+    margin-right: 35px;
+  height: 25px;
+  width: 40px;
+}
+.before {
+    color: gray;
+    font-weight: bold;
+    text-decoration: line-through;
 }
