@@ -9,7 +9,7 @@ let boxImgMini3 = document.getElementById("BoxImgMini3")
 let boxImgMini4 = document.getElementById("BoxImgMini4")
 
 imgMini1.addEventListener("click", function(){
-    imgBox.setAttribute("src" ,"imagenes/image-product-1(1).jpg" );
+    imgBox.setAttribute("src" ,"imagenes/image-product-1.jpg" );
     boxImgMini1.classList.add("box-img-mini")
     boxImgMini2.classList.remove("box-img-mini")
     boxImgMini3.classList.remove("box-img-mini")
@@ -56,31 +56,49 @@ imgMini4.addEventListener("click", function(){
     boxImgMini3.classList.remove("img-mini-act")
     boxImgMini4.classList.add("img-mini-act")
 });
- 
- let btnRestar = document.getElementById("btnRestar");
- let cantBox = document.getElementById ("cantBox");
- let numeroElementos = document.getElementById("numeroElementos");
- let btnCantidad = document.getElementById ("btnCantidad");
- let btnSumar = document.getElementById("btnSumar");
- let click =0;
+let btnRestar = document.getElementById("btnRestar");
+let btnSumar = document.getElementById("btnSumar");
+let btnCantidad = document.getElementById ("btnCantidad");
+let cantBox = document.getElementById ("cantBox");
+let numeroElementos = document.getElementById("numeroElementos");
 
- btnSumar.addEventListener("click", function(){
-if (click ==30) {
-    click =30;
-}else{
-    click = click +1
-    numeroElementos.innerHTML=click
-}
- })
 
- btnRestar.addEventListener("click", function(){
-    if (click ==0) {
-        click =0;
-    }else{
-        click = click -1
-        numeroElementos.innerHTML=click
+   let valorUnitario = 199000;
+   let valorUnitarioTxt = valorUnitario.toString();
+   let valorUnitarioPeso = new  Intl.NumberFormat().format(valorUnitario);
+   let valorTotal=document.getElementById("valorTotal");
+   let valorTotalInt= 0;
+
+btnSumar.addEventListener("click" , function(){
+   let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+   let numeroElementosInt = parseInt(numeroElementosTxt);
+   if(numeroElementosInt < 10){
+    let totalElementosInt = numeroElementosInt + 1;
+    let totalElementostxt = totalElementosInt.toString();
+    numeroElementos.innerHTML = totalElementostxt;
+    valorTotalInt = valorUnitario * totalElementosInt;
+    valorTotal.innerHTML = "$" + Intl.NumberFormat().format(valorTotalInt);
+   }
+});
+
+btnRestar.addEventListener("click" , function(){
+    let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+    let numeroElementosInt = parseInt(numeroElementosTxt);
+    if(numeroElementosInt > 0){
+     let totalElementosInt = numeroElementosInt - 1;
+     let totalElementostxt = totalElementosInt.toString();
+     numeroElementos.innerHTML = totalElementostxt;
+     valorTotalInt = valorUnitario * totalElementosInt;
+     valorTotal.innerHTML = "$" + Intl.NumberFormat().format(valorTotalInt);
     }
  });
+
+  let lightBox = document.getElementById("lightBox");
+  
+  imgBox.addEventListener("click", function(){
+    lightBox.classList.remove("light-hidden");
+  });
+ 
 
 
 
