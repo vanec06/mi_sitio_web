@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+  <link rel="stylesheet" href="css/carritoCompras.css">
+  <link rel="stylesheet" href="icons/all.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+  <link rel="stylesheet" href="icons/flexbox.css">
+</head>
+
+<body>
+  <!-- <div id="lightBox" class="lightbox light-hidden">
+     <div class="main-lightbox">
+         <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+         <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+         <img class="img-main-light" src="img/image-product-1.jpg" alt="">
+        
+     </div>
+   </div> -->
+
+
+  <h1>CARRITO DE COMPRAS</h1>
+  <div class="box-main">
+    <div class="img-box-main">
+      <img id="imgBox" class="img-box" src="img/image-product-1.jpg" alt="">
+
+      <div id="boxImgMini1" class=" box-img-1">
+        <img id="imgMini1" class="img-mini" src="img/image-product-1.jpg" alt="mini-1">
+      </div>
+
+      <div id="boxImgMini2" class="box-img-2">
+        <img id="imgMini2" class="img-mini" src="img/image-product-2.jpg" alt="mini-2">
+      </div>
+
+      <div id="boxImgMini3" class="box-img-3">
+        <img id="imgMini3" class="img-mini" src="img/image-product-3.jpg" alt="mini-3">
+      </div>
+
+      <div id="boxImgMini4" class="box-img-4">
+        <img id="imgMini4" class="img-mini" src="img/image-product-4.jpg" alt="mini-4">
+      </div>
+    </div>
+    <div class="buy-box">
+      <div id="Totales" class="totales">
+        <div id="valorTotal" class="valor-total">$199.00</div>
+      </div>
+
+      <div id="cantBox" class="cant-box">
+        <div id="btnRestar" class="icon btn-restar">-</div>
+        <div id="btnCantidad" class="icon cant-obj"><span id="numeroElementos">0</span></div>
+        <div id="btnSumar" class="icon btn-sumar">+</div>
+
+        <div class="btn-add">
+          <button class="add">
+            <p class="txt-add"><img class="car" src="img/carrito-de-compras.png" alt=""> Add to cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightBox" class="box-main lightbox light-hidden">
+    <div class="main-center">
+      <i id="salir" class="fa-solid  fa-xmark"></i>
+      <div class="img-box-main main-lightbox">
+        <div id="adelante" class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+        <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+        <img id="imgBox1.0" class="img-box" src="img/image-product-1.jpg" alt="">
+        <div id="boxImgMini1.0" class=" box-img-1">
+          <img id="imgMini1.0" class="img-mini" src="img/image-product-1.jpg" alt="mini-1">
+        </div>
+
+        <div id="boxImgMini2.0" class="box-img-2">
+          <img id="imgMini2.0" class="img-mini" src="img/image-product-2.jpg" alt="mini-2">
+        </div>
+
+        <div id="boxImgMini3.0" class="box-img-3">
+          <img id="imgMini3.0" class="img-mini" src="img/image-product-3.jpg" alt="mini-3">
+        </div>
+
+        <div id="boxImgMini4.0" class="box-img-4">
+          <img id="imgMini4.0" class="img-mini" src="img/image-product-4.jpg" alt="mini-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/carrito.js"></script>
+</body>
+
+</html>

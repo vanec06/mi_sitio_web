@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/menu_carrito.css">
-    <script src="https://kit.fontawesome.com/f43e3a9476.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+<link rel="stylesheet" href="css/menu_carrito.css">
+  <link rel="stylesheet" href="icons/all.css">
+<link rel="stylesheet" href="fonts/">
+  <link rel="stylesheet" href="icons/flexbox.css">
 </head>
+
 <body>
- <div id="lightBox" class=" lightbox  light-hidden">
+  <!-- <div id="lightBox" class="lightbox light-hidden">
      <div class="main-lightbox">
-            <div class=" btn-style btn-atras"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class=" btn-style btn-adelante"><i class="fa-solid fa-chevron-right"></i></div>
-            <img class="img-main-light" src="imagenes/image-product-1.jpg" alt="">
-    </div>
-</div>
-    <h1>Carrito de compras</h1>
- <div class="box-main">
+         <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+         <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+         <img class="img-main-light" src="img/image-product-1.jpg" alt="">
+        
+     </div>
+   </div> -->
+
+
+  <h1>CARRITO DE COMPRAS</h1>
+  <div class="box-main">
     <div class="img-box-main">
-        <!-- <div id="imgBox"   class="img-box"> -->
-             <img id="imgBox" class="img-box" src="imagenes/image-product-1.jpg" alt="">
-            <!-- </div> -->
-        <div id="BoxImgMini1" class="box-img-1">
-             <img id="imgMini1" class="img-mini" src="imagenes/image-product-1-thumbnail.jpg" alt="mini-1">
-        </div>
-        <div  id="BoxImgMini2" class="box-img-2">
-             <img id="imgMini2" class="img-mini" src="imagenes/image-product-2.jpg" alt="mini-2">
-        </div>
-        <div  id="BoxImgMini3" class="box-img-3">
-            <img id="imgMini3" class="img-mini" src="imagenes/image-product-3.jpg" alt="mini-3">
-        </div>
-        <div  id="BoxImgMini4" class="box-img-4">
-             <img id="imgMini4" class="img-mini" src="imagenes/image-product-4.jpg" alt="mini-4">
-        </div>
-    </div>
-        <!-- <div class="info">
-            <p class="orange">SNEAKER COMPANY</p>
-            <h3 class="sub-title">Fall Limited Edition  <br> Sneakers</h3>
-            <p class="txt bottom">These low-profile sneakers are your perfect casual wear <br> companion. Featuring a
-                durable rubber
-                outer sole, they'll <br> withstand everything the weather can offer</p>
+      <img id="imgBox" class="img-box" src="imagenes/image-product-1.jpg" alt="">
 
-            <div class="number-flex">
-                <p id="valorTotal" class="number bottom">$125.00
-                <p class="dto">50%</p>
-                </p>
-            </div>
+      <div id="boxImgMini1" class=" box-img-1">
+        <img id="imgMini1" class="img-mini" src="imagenes/image-product-1.jpg" alt="mini-1">
+      </div>
 
-            <p class="before bottom">$250.00</p>
-            <div class="counter">
-                <div class="buttons">
-                    <div class="btn less point" id="less">
-                        <p class="simb"><i class="fa-solid icon fa-minus"></i></p>
-                    </div>
-                 </div> -->
-    <div class="buy-box" >
-    <div id="Totales" class="totales">
-        <div id="valorTotal" class="valor-total">$199.000</div>
+      <div id="boxImgMini2" class="box-img-2">
+        <img id="imgMini2" class="img-mini" src="imagenes/image-product-2.jpg" alt="mini-2">
+      </div>
+
+      <div id="boxImgMini3" class="box-img-3">
+        <img id="imgMini3" class="img-mini" src="imagenes/image-product-3.jpg" alt="mini-3">
+      </div>
+
+      <div id="boxImgMini4" class="box-img-4">
+        <img id="imgMini4" class="img-mini" src="imagenes/image-product-4.jpg" alt="mini-4">
+      </div>
     </div>
-        <div id="cantBox" class="cant-box">
-        <div id="btnRestar" class="icon-op btn-restar">-</div>
-        <div id="btnCantidad" class="icon-op cant-obj"> <span id="numeroElementos">0</span></div>
-        <div  id="btnSumar" class="icon-op btn-sumar">+</div>   
+    <div class="buy-box">
+      <div id="Totales" class="totales">
+        <div id="valorTotal" class="valor-total">$199.00</div>
+      </div>
+
+      <div id="cantBox" class="cant-box">
+        <div id="btnRestar" class="icon btn-restar">-</div>
+        <div id="btnCantidad" class="icon cant-obj"><span id="numeroElementos">0</span></div>
+        <div id="btnSumar" class="icon btn-sumar">+</div>
 
         <div class="btn-add">
-            <button class="add">
-                <p class="txt-add">  <img class="car" src="imagenes/cart-shopping-solid.svg" alt=""> Add to cart</p>
-            </button>
+          <button class="add">
+            <p class="txt-add"><img class="car" src="imagenes/carrito-de-compras.png" alt=""> Add to cart</p>
+          </button>
         </div>
+      </div>
     </div>
+  </div>
+
+  <div id="lightBox" class="box-main lightbox light-hidden">
+    <div class="main-center">
+      <i id="salir" class="fa-solid  fa-xmark"></i>
+      <div class="img-box-main main-lightbox">
+        <div id="adelante" class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+        <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+        <img id="imgBox1.0" class="img-box" src="img/image-product-1.jpg" alt="">
+        <div id="boxImgMini1.0" class=" box-img-1">
+          <img id="imgMini1.0" class="img-mini" src="img/image-product-1.jpg" alt="mini-1">
+        </div>
+
+        <div id="boxImgMini2.0" class="box-img-2">
+          <img id="imgMini2.0" class="img-mini" src="img/image-product-2.jpg" alt="mini-2">
+        </div>
+
+        <div id="boxImgMini3.0" class="box-img-3">
+          <img id="imgMini3.0" class="img-mini" src="img/image-product-3.jpg" alt="mini-3">
+        </div>
+
+        <div id="boxImgMini4.0" class="box-img-4">
+          <img id="imgMini4.0" class="img-mini" src="img/image-product-4.jpg" alt="mini-4">
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-   
+  </div>
 
 
-   <script src="js/menu_carrito.js" ></script>
+
+  <script src="js/menu_carrito.js"></script>
 </body>
+
 </html>
