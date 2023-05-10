@@ -1,3 +1,7 @@
+
+
+
+
 let imgBox = document.getElementById("imgBox");
 let boxImgMini1 = document.getElementById("boxImgMini1");
 let boxImgMini2 = document.getElementById("boxImgMini2");
@@ -9,7 +13,7 @@ let imgMini3 = document.getElementById("imgMini3");
 let imgMini4 = document.getElementById("imgMini4");
 
 imgMini1.addEventListener("click", function () {
-  imgBox.setAttribute("src", "img/image-product-1.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-1.jpg");
   boxImgMini1.classList.add("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
@@ -21,7 +25,7 @@ imgMini1.addEventListener("click", function () {
 });
 
 imgMini2.addEventListener("click", function () {
-  imgBox.setAttribute("src", "img/image-product-2.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-2.jpg");
   boxImgMini1.classList.remove("box-img-mini");
   boxImgMini2.classList.add("box-img-mini");
   boxImgMini3.classList.remove("box-img-mini");
@@ -33,7 +37,7 @@ imgMini2.addEventListener("click", function () {
 
 });
 imgMini3.addEventListener("click", function () {
-  imgBox.setAttribute("src", "img/image-product-3.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-3.jpg");
   boxImgMini1.classList.remove("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
   boxImgMini3.classList.add("box-img-mini");
@@ -44,7 +48,7 @@ imgMini3.addEventListener("click", function () {
   imgMini4.classList.remove("img-mini-act");
 });
 imgMini4.addEventListener("click", function () {
-  imgBox.setAttribute("src", "img/image-product-4.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-4.jpg");
   boxImgMini1.classList.remove("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
   boxImgMini3.classList.remove("box-img-mini");
@@ -68,7 +72,7 @@ let img3 = document.getElementById("imgMini3.0");
 let img4 = document.getElementById("imgMini4.0");
 
 Mini1.addEventListener("click", function () {
-  imgBoxSecond.setAttribute("src", "img/image-product-1.jpg");
+  imgBoxSecond.setAttribute("src", "imagenes/image-product-1.jpg");
   Mini1.classList.add("box-img-mini");
   Mini2.classList.remove("box-img-mini");
   Mini2.classList.remove("box-img-mini");
@@ -77,7 +81,7 @@ Mini1.addEventListener("click", function () {
   img2.classList.remove("img-mini-act");
   img3.classList.remove("img-mini-act");
   img4.classList.remove("img-mini-act");
-  imgBox.setAttribute("src", "img/image-product-1.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-1.jpg");
   boxImgMini1.classList.add("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
@@ -89,7 +93,7 @@ Mini1.addEventListener("click", function () {
 });
 
 Mini2.addEventListener("click", function () {
-  imgBoxSecond.setAttribute("src", "img/image-product-2.jpg");
+  imgBoxSecond.setAttribute("src", "imagenes/image-product-2.jpg");
   Mini1.classList.remove("box-img-mini");
   Mini2.classList.add("box-img-mini");
   Mini3.classList.remove("box-img-mini");
@@ -98,7 +102,7 @@ Mini2.addEventListener("click", function () {
   img2.classList.add("img-mini-act");
   img3.classList.remove("img-mini-act");
   img4.classList.remove("img-mini-act");
-  imgBox.setAttribute("src", "img/image-product-2.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-2.jpg");
   boxImgMini1.classList.remove("box-img-mini");
   boxImgMini2.classList.add("box-img-mini");
   boxImgMini3.classList.remove("box-img-mini");
@@ -110,7 +114,7 @@ Mini2.addEventListener("click", function () {
 
 });
 Mini3.addEventListener("click", function () {
-  imgBoxSecond.setAttribute("src", "img/image-product-3.jpg");
+  imgBoxSecond.setAttribute("src", "imagenes/image-product-3.jpg");
   Mini1.classList.remove("box-img-mini");
   Mini2.classList.remove("box-img-mini");
   Mini3.classList.add("box-img-mini");
@@ -119,7 +123,7 @@ Mini3.addEventListener("click", function () {
   img2.classList.remove("img-mini-act");
   img3.classList.add("img-mini-act");
   img4.classList.remove("img-mini-act");
-  imgBox.setAttribute("src", "img/image-product-3.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-3.jpg");
   boxImgMini1.classList.remove("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
   boxImgMini3.classList.add("box-img-mini");
@@ -130,7 +134,7 @@ Mini3.addEventListener("click", function () {
   imgMini4.classList.remove("img-mini-act");
 });
 Mini4.addEventListener("click", function () {
-  imgBoxSecond.setAttribute("src", "img/image-product-4.jpg");
+  imgBoxSecond.setAttribute("src", "imagenes/image-product-4.jpg");
   Mini1.classList.remove("box-img-mini");
   Mini2.classList.remove("box-img-mini");
   Mini3.classList.remove("box-img-mini");
@@ -139,7 +143,7 @@ Mini4.addEventListener("click", function () {
   img2.classList.remove("img-mini-act");
   img3.classList.remove("img-mini-act");
   img4.classList.add("img-mini-act");
-  imgBox.setAttribute("src", "img/image-product-4.jpg");
+  imgBox.setAttribute("src", "imagenes/image-product-4.jpg");
   boxImgMini1.classList.remove("box-img-mini");
   boxImgMini2.classList.remove("box-img-mini");
   boxImgMini3.classList.remove("box-img-mini");
