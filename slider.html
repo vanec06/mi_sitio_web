@@ -12,36 +12,38 @@
   
 </head>
 <body>
-    <div class="box-container">
-        <div class="main-menu">
-            <img class="img-logo" src="imagenes/logocar.png">
-            <div class="box-style"><a class="style-items" href="">vehículos </a></div>
-            <div class="box-style"><a class="style-items" href="">Consecionarios</a></div>
-            <div class="box-style"><a class="style-items" href="">Vehículos usados</a></div>
-            <div class="box-style"><a class="style-items" href="">Toyota colombia</a></div>
-            <div class="box-style"><a class="style-items" href="">My toyota</a></div>
-        </div>
-        <div class="container-img">
-            <img id="imgg" class="box-img" src="imagenes/carro1.jpg" alt="">
-            <div id="btnAdelante" class="adelante" ><i class="fa-solid fa-circle-chevron-right"></i></div>
-            <div id="btnAtras" class="atras " ><i class="fa-solid fa-circle-chevron-left"></i></div>
-        </div>
-       
-        <div class="container-img">
-          <img id="imgg" class="box-img" src="imagenes/carr02.jpg" alt="">
-    </div>
+    <div class="box-content">
+        <div class="empy-left"></div>
+        <nav class="main-nav">
+            <div class="logo-box">
+                <img  class="img-logo"src="imagenes/logocar.png" alt="Logo Toyota">
+            </div>
+          
+         <ul class="main-ul">
+            <li class="style-li"><a class="style-items" href="#">vehículos </a></li>
+            <li class="style-li"><a class="style-items" href="#">Consecionarios</a></li>
+            <li class="style-li"><a class="style-items" href="#">Vehículos usados</a></li>
+            <li class="style-li"><a class="style-items" href="#">Toyota colombia</a></li>
+            <li class="style-li"><a class="style-items" href="#">My toyota</a></li>
+            <div class="logo-box">
+                <img class="img-logo2" src="imagenes/logocar2.png" alt="logo Toyota">
+            </div>
+            </ul>
+        </nav>
+        <div class="box-marco">
+            <div id="leftAroow" class="flecha-atras " ><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id="leftAdelante" class="flecha-adelante" ><i class="fa-solid fa-circle-chevron-right"></i></div>
 
-    <div class="container-img">
-          <img id="imgg" class="box-img" src="imagenes/carro3.jpg" alt="">
-      </div>
-      <div class="container-img">
-            <img id="imgg" class="box-img" src="imagenes/carro4.jpg" alt="">
+            <img id="imgToyotaCamry" class="img-toyota-camry" src="imagenes/carro1.jpg" alt="Toyota">
+            <img id="imgToyotaTundra"class="img-toyota-tundra-hidden-right"  src="imagenes/carr02.jpg" alt="Toyota">
+            <img id="imgToyotaRav4"  class="img-toyota-rav4-hidden-right" src="imagenes/carro3.jpg" alt="Toyota">
+        
         </div>
-       
+        <div class="empty-right"></div>
 
-        <div class="empty-l"></div>
-        <div class="empty-r"></div>
+
     </div>
+    <script src="js/slider.js"></script>
+
 </body>
-<script src="js/slider.js"></script>
 </html>
