@@ -1,7 +1,7 @@
-let botonMenujs = document.getElementById("Nosotros");
+let Productos = document.getElementById("Productos");
 
 
-botonMenujs.addEventListener("click", function() {
+Productos.addEventListener("click", function() {
 alert("hola mundo, yo soy un boton!!");
 
 });
