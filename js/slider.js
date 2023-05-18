@@ -21,11 +21,23 @@ lefArrow.addEventListener("click", function () {
     }
 
 });
+ leftAdelante.addEventListener("click", function(){
+    if(imgToyotaRav4.classList.contains("img-toyota-rav4")){
+        imgToyotaRav4.classList.remove("img-toyota-rav4")
+        imgToyotaRav4.classList.add("img-toyota-rav4-hidden-right");
+        imgToyotaTundra.classList.add("img-toyota-tundra");
+        imgToyotaTundra.classList.remove("img-toyota-tundra-hidden-left");
 
-leftAdelante.addEventListener("click", function () {
-    alert ("ghgffhjg");
+    }
+    else if (imgToyotaTundra.classList.contains("img-toyota-tundra")){
+        imgToyotaTundra.classList.add("img-toyota-tundra-hidden-right");
+        imgToyotaCamry.classList.add("img-toyota-camry");
+        imgToyotaCamry.classList.remove("img-toyota-camry-hidden");
 
-});
+
+    }
+ })
+
 
 
 
