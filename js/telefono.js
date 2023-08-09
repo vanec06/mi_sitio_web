@@ -1,15 +1,12 @@
 
-let barMenu = document.getElementById("barMenu");
-let main_Menu = document.getElementById("mainMenu");
+let idlupa = document.getElementById("idlupa");
+let boxheader1 = document.getElementById("boxheader1");
+let boxheader2 = document.getElementById("boxheader2");
 
-barMenu.addEventListener("click", function() {
-   if (main_Menu.classList.contains("main-menu")) {
-      main_Menu.classList.add("main-menu-visible");
-      main_Menu.classList.remove("main-menu");
-    }
-   else {
-      main_Menu.classList.remove("main-menu-visible");
-      main_Menu.classList.add("main-menu");
-   }
+idlupa.addEventListener("click", function() {
+   boxheader1.classList.add("box-header1-hidden");
+   boxheader1.classList.remove("box-header-1");
+   boxheader2.classList.remove("box-header-2-hidden");
+   boxheader2.classList.add("box-header-2");
 });
 
