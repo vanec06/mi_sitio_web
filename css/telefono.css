@@ -62,10 +62,12 @@ width: 100%;
 }
 .box-header-2-hidden{
 display: none;
-
-
 }
 .x-exit{
+  
+    width: 98%;
+    text-align: right;
     color: red;
+    
 }
 
