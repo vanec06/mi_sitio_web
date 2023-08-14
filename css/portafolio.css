@@ -26,8 +26,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
   
-
 }
 
 /* Encabezado */
@@ -61,37 +61,38 @@ nav a {
 section {
     padding: 2rem;
 }
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
 /* Estilos para las cajas de proyecto */
 .proyectos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-  
-   
 }
 
 .proyecto {
-    width: calc(33.33% - 20px);
+    width:30%;
+    height: 300px;
     margin: 10px;
     padding: 20px;
     border: 1px solid #ddd;
     box-sizing: border-box;
-    
+    background-color: #e2d2ef;
+    font-size: 1.1em;
+}
+h2{
+    text-align: center;
 }
 li{
+    cursor: pointer;
    list-style: none;
-   
 }
 a{
     text-decoration: none;
+}
+/* Pie de página */
+.abajo{
+    background-color: #b692cf;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
