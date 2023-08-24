@@ -9,11 +9,12 @@ img {
 }
 .box-header-1 {
     width: 100%;
+    /* background-color: red; */
     height: 70px;
-    background-color: white;
     display: grid;
-    grid-template: "menu-hamburguer    img-logo    icono-lupa    carrito-compra  icono-user" 70px /
-                    30px                   80px  1fr  50px             50px         50px;
+    align-items: center;
+    grid-template: "menu-hamburguer img-logo icono-lupa circle  carrito-compras icono-user" 70px/
+                    30px            80px    1fr      50px       50px            50px;
 }
 .cont-two {
     align-items: center;
@@ -63,35 +64,31 @@ img {
     grid-area: menu-hamburguer;
     position: relative;
     left: 20px;
-    top: 20px;
+    /* top: 20px; */
 }
 .img-logo {
     grid-area: img-logo;
     width: 100px;
-    text-align: right;
 }
 .circle {
     grid-area: circle;
-    width: 68px;
+    width: 60px;
 }
 .carrito-compra {
-    margin-top: 20px;
     grid-area: carrito-compra;
     width: 60px
 }
 .icono-user {
-    margin-top: 10px;
     grid-area: icono-user;
-    width: 60px;
+    width: 20px;
 }
-.icono-homecenter {
-    width: 60px;
+.icono-homecenter{
+    width: 25px;
     position: relative;
-    top: 7px;
-    left: -30px;
+    /* top: 10px; */
+    left: 20px;
 }
 .img-lupa {
-    margin-top: 18px;
     width: 30px;
 }
 input {
@@ -110,9 +107,6 @@ input {
 .box-header-2 {
     width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
 }
 .box-header-2-hidden {
@@ -126,8 +120,11 @@ input {
     width: 90%;
 }
 .x-exit {
-    font-size: 23px;
-    transition: all 300ms;
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
 }
 .form-ana {
     position: fixed;
@@ -138,6 +135,7 @@ input {
     display: grid;
     grid-template: "frm-header" 70px
                    "frm-body"  minmax(150px, 90vh)
+                   "frm-btn" 10px
                    "frm-input" 60px
                    "frm-exit" 80px/
                     406px;     
@@ -168,10 +166,11 @@ input {
 .form-body {
     grid-area: frm-body;
     background-color: rgb(234,238,243);
+    background-color: green;
     display: grid;
-    grid-template: "empty-left form-text empty-right"
-                   "empty-left slider    empty-right" /
-                    50px        1fr       40px;
+    grid-template: "empty-left      form-text       empty-right"
+                   "icons-slider    icons-slider    icons-slider" 125px /
+                    50px            1fr              40px;
 }
 .img-ana-II {
     width: 100px;
@@ -185,8 +184,9 @@ input {
     background-color: white;
     width: 250px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     letter-spacing: 0.08em;
+    margin-top: 10px;
 }
 .finger-style {
     color: rgb(246, 191, 11);
@@ -197,28 +197,139 @@ input {
     margin-top: 30px;
     letter-spacing: 0.08em;
 }
+/* .box-right-arrow {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+} */
+.img-right-arrow {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
 .reloj-msj {
     font-size: .7em;
     position: relative;
     bottom: 0;
     left: 200px;
 }
+.icons-slider {
+    grid-area: icons-slider;
+    display: grid;
+    grid-template: "box-icon-arrow-left box-main-slider box-icon-arrow-right" /
+                    50px                310px            50px;
+}
+.box-main-slider {
+    grid-area: box-main-slider;
+    width: 310px;
+    background-color: blue;
+    overflow: hidden;
+    display: grid;
+    grid-area: "icon-arrow-left slider";
+}
+.box-icon-arrow-left {
+    grid-area: box-icon-arrow-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-icon-arrow-right {
+    grid-area: box-icon-arrow-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-arrow-left:hover{
+    cursor: pointer;
+}
+.icon-arrow-rin:hover{
+    cursor: pointer;
+}
+.icon-arrow-left {
+    grid-area: icon-arrow-left;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.icon-arrow-right {
+    grid-area: icon-arrow-right;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+     
+
+
+}
+.fa-chevron-left {
+    font-size: 1.6em;
+    color: rgb(0,93,173);
+}
 .slider {
+/*     background-color: red;  */
     grid-area: slider;
     font-size: .9em;
+    height: 123px;
+    width: 300px; 
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    margin-left: 50px;
+    flex-flow: column wrap;
+    position: relative;
+}
+.slider-view-1{
+transition: all 700ms    ;
+right: 50px;
+
+}
+.slider-view-2{
+transition: all 700ms;
+right: 380px;
+}
+.slider-view-3{
+ transition: all 700ms;
+right: 700px;
+}
+.slider-view-4{
+    transition: all 700ms;
+right: 1050px;
 }
 .box-slider {
     background-color: white;
-    width: 250px;
+    width: 308px;
     height: 120px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-right: 20px;
+}
+.slider1 {
+    position: relative;
+   /*  right: 300px; */
+}
+.slider2 {
+    position: relative;
+    background-color: yellow;
+}
+.slider3 {
+    background-color: aqua;
+}
+.slider4 {
+    background-color: violet;
 }
 .slider-title {
     font-weight: 900;
@@ -243,6 +354,32 @@ input {
     font-weight: 400;
     margin-top: 10px;
 }
+
+.frm-btn{
+    background-color: yellow;
+    grid-area: frm-btn;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5px;
+}
+.box-btn{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(64, 64, 64);
+    margin-left:8px;
+    margin-right: 8px;
+}
+.btn-1-select{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: rgb(64, 64, 64);
+    margin-left:8px;
+    margin-right: 8px;
+}
+
 .form-input {
     grid-area: frm-input;
     background-color: rgb(234,238,243);
@@ -252,7 +389,7 @@ input {
     display:flex;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 .input-text {
     margin-left: 20px;
@@ -286,6 +423,7 @@ input {
     display: flex;
     justify-content: flex-end;
 }
+
 /* Fonts... */
 /* lato-100 - latin */
 @font-face {
@@ -334,8 +472,7 @@ input {
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
+  } 
 
 
 
