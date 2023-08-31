@@ -503,7 +503,7 @@ input {
     transition: all 300ms ;
     position: fixed;
     right: 20px;
-    height: 100vh;
+    height: 80vh;
     top: 0;
     width: 406px;
     display: grid;
