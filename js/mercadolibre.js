@@ -10,8 +10,8 @@ class Automovil{
 }
 
 
-let auto1 = new Automovil("Toyota","TXL",15000,2021,"pitalito - Huila",35420);
-let auto2 = new Automovil("Toyota","TXL",15000,2021,"pitalito - Huila",35420);
+let auto1 = new Automovil("Toyota","TXL",20000000,2021,"pitalito - Huila",35420);
+let auto2 = new Automovil("Toyota","TXL",15000000,2021,"pitalito - Huila",140402);
 // let marcaautomovil = auto1.marca;
 let inputbusqueda = document.getElementById("inputBusqueda");
 
