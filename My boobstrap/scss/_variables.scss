@@ -1,9 +1,0 @@
-$progress-height:                   1rem;
-$progress-font-size:                $font-size-base * .3;
-$progress-bg:                       var(--#{$prefix}secondary-bg);
-$progress-border-radius:            var(--#{$prefix}border-radius);
-$progress-box-shadow:               var(--#{$prefix}box-shadow-inset);
-$progress-bar-color:                $white;
-$progress-bar-bg:                   $success;
-$progress-bar-animation-timing:     1s linear infinite;
-$progress-bar-transition:           width .6s ease;
