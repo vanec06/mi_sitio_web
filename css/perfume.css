@@ -97,7 +97,7 @@ cursor: pointer;
         height: 40%;
     }
     .img-container img{
-        content: url(/imagenes/image-product-mobile.jpg);
+        content: url("/imagenes/image-product-mobile.jpg");
     }
     .card{
         flex-direction: column;
@@ -109,8 +109,8 @@ cursor: pointer;
         padding-right: 0;
     }
     .img-container img{
-        border-top-left-radius:5px ;
-        border-top-right-radius:5px ;
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
         border-bottom-left-radius:0px ;
     }
 }
