@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+ background-image: url("../GIF/fxyK.gif");
+ height: 760px;
+ width: 100%;
+ background-size: cover;
+ position: relative;
+ overflow-x: hidden;
+}
+.via2{
+    background-image: url("../GIF/carretera2.gif");
+    height: 760px;
+    width: 200px;
+    position: absolute;
+    display: block;
+
+}
