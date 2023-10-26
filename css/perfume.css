@@ -53,17 +53,17 @@ border-bottom-left-radius:10px ;
     color:rgb(108, 114, 137);
     margin-bottom: 1.75rem;
 }
-.price-container{
+.precio-container{
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-bottom: 1.75rem;
 
 }
-.price-container .precio{
+.precio-container .precio{
     color: rgb(61, 129, 104);
 }
-.price-container .precio-descuento{
+.precio-container .precio-descuento{
     font-family: "Montserrat";
     color: rgb(108, 114, 137);
     text-decoration: line-through;
