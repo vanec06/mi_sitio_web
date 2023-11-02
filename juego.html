@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"  href="imagenes/favicon.ico">
+    <title>Flappy Bird Game</title>
     <link rel="stylesheet" href="css/juego.css">
-    <title>Animacion</title>
 </head>
 <body>
-    <div class="main" >
-        <div class="via1"></div>
-        <div class="via2"></div>
+    <div class="iconpa"></div>
+    <img src="imagenes/Bird.png" alt="invalid-img" class="bird" id="bird-1">
+    <div class="mensaje">
+     Enter para iniciar el juego <p><span style="color: red;">&uarr;</span> flecha arriba para controlar</p>
     </div>
-
+    <div class="puntaje">
+        <span class="puntaje_titulo"></span>
+        <span class="puntaje_val"></span>
+    </div>
+    <script src="js/juego.js"></script>
 </body>
 </html>
