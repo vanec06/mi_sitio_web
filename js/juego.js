@@ -5,10 +5,10 @@ let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 
 // getting bird element properties
-let bird_props = bird.getBoundingClientRect();
+let bird_props = bird.getBoundingClient();
 
 // This method returns DOMReact -> top, right, bottom, left, x, y, width and height
-let iconpa = document.querySelector('.iconpa').getBoundingClientRect();
+let iconpa = document.querySelector('.iconpa').getBoundingClient();
 
 let puntaje_val = document.querySelector('.puntaje_val');
 let mensaje = document.querySelector('.mensaje');
@@ -41,8 +41,8 @@ function play(){
 
         let tubos = document.querySelectorAll('.tubos');
         tubos.forEach((element) => {
-            let tubos_props = element.getBoundingClientRect();
-            bird_props = bird.getBoundingClientRect();
+            let tubos_props = element.getBoundingClient();
+            bird_props = bird.getBoundingClient();
 
             if(tubos_props.right <= 0){
                 element.remove();
@@ -92,7 +92,7 @@ function play(){
             return;
         }
         bird.style.top = bird_props.top + bird_dy + 'px';
-        bird_props = bird.getBoundingClientRect();
+        bird_props = bird.getBoundingClient();
         requestAnimationFrame(apply_gravity);
     }
     requestAnimationFrame(apply_gravity);
@@ -101,7 +101,7 @@ function play(){
 
     let gap = 35;
 
-    function create_pipe(){
+    function create(){
         if(game_state != 'Play') return;
 
         if(seperation > 115){
@@ -123,7 +123,7 @@ function play(){
             document.body.appendChild(tubos);
         }
         seperation++;
-        requestAnimationFrame(create_pipe);
+        requestAnimationFrame(create);
     }
-    requestAnimationFrame(create_pipe);
+    requestAnimationFrame(create);
 }
