@@ -5,10 +5,10 @@ let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 
 // getting bird element properties
-let bird_props = bird.getBoundingClient();
+let bird_props = bird.getBoundingClientRect();
 
 // This method returns DOMReact -> top, right, bottom, left, x, y, width and height
-let iconpa = document.querySelector('.iconpa').getBoundingClient();
+let iconpa = document.querySelector('.iconpa').getBoundingClientRect();
 
 let puntaje_val = document.querySelector('.puntaje_val');
 let mensaje = document.querySelector('.mensaje');
@@ -41,8 +41,8 @@ function play(){
 
         let tubos = document.querySelectorAll('.tubos');
         tubos.forEach((element) => {
-            let tubos_props = element.getBoundingClient();
-            bird_props = bird.getBoundingClient();
+            let tubos_props = element.getBoundingClientRect();
+            bird_props = bird.getBoundingClientRect();
 
             if(tubos_props.right <= 0){
                 element.remove();
@@ -92,7 +92,7 @@ function play(){
             return;
         }
         bird.style.top = bird_props.top + bird_dy + 'px';
-        bird_props = bird.getBoundingClient();
+        bird_props = bird.getBoundingClientRect();
         requestAnimationFrame(apply_gravity);
     }
     requestAnimationFrame(apply_gravity);
