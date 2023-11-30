@@ -1,0 +1,44 @@
+.contenedor {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  button {
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    
+  }
+  
+  .btn {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .barra {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 100px;
+    background-color: lightgray;
+    margin-right: 15px;
+  }
+  
+  /* Estilo para la barra llena */
+  .barra.lleno {
+    background-color: yellow;
+  }
+  .cuadros{
+    display:block;
+    position: relative;
+    width: 30px;
+
+  }
+  .cuadro{
+    margin-top: 10px;
+    height: 35px;
+    
+  }
