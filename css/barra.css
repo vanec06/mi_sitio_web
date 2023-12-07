@@ -24,7 +24,7 @@ input{
 }
 
 progress {
- 
+
   width: 100%;
   height: 50px;
   margin-bottom: 10px;
@@ -49,4 +49,6 @@ progress {
   justify-content: center;
   padding-top: 15px;
 }
-
+.nombre{
+  text-align: center;
+}
