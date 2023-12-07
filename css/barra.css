@@ -1,44 +1,53 @@
-.contenedor {
-    text-align: center;
-    margin-top: 80px;
-  }
-  
-  button {
-    height: 50px;
-    font-size: 20px;
-    border: none;
-    
-  }
-  
-  .btn {
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .barra {
-    position: relative;
-    display: inline-block;
-    width: 35px;
-    height: 100px;
-    background-color: lightgray;
-    margin-right: 15px;
-  }
-  
-  /* Estilo para la barra llena */
-  .barra.lleno {
-    background-color: yellow;
-  }
-  .cuadros{
-    display:block;
-    position: relative;
-    width: 30px;
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  .cuadro{
-    margin-top: 10px;
-    height: 35px;
-    
-  }
+.contenedor {
+  font-weight: 300;
+  background-color: rgb(168, 95, 186);
+  display: block;
+  border-radius: 7px;
+  width: 300px;
+  left: 23px;
+  top: 23px;
+  padding: 20px;
+  height: auto;
+  position: relative;
+  margin: 12px;
+}
+input{
+  border: 1px solid honeydew;
+  border-radius: 1px;
+  
+
+}
+
+progress {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  transition: value 20.30s ease-in-out; /* Agregamos una transición */
+  
+ 
+}
+.sta-Bars{
+ 
+  width: 500px;
+  position: relative;
+  left: 23px;
+  top: 40px;
+}
+.valor{
+ 
+  border-radius: 3px;
+}
+.btn{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+label{
+  color: white;
+}

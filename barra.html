@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/barra.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras</title>
+    <link rel="stylesheet" href="css/barra.css">
 </head>
 <body>
-  <script src="js/barra.js"></script>
-  <div class="contenedor">
-    <div class="barra">
-      <div class="numero">0</div>
-     
-    </div>
-    <div class="barra">
-      <div class="numero">0</div>
-     
-    </div>
-    <div class="barra">
-      <div class="numero">0</div>
-      
-    </div>
-    <div class="barra">
-      <div class="numero">0</div>
-      
-    </div>
-    <div class="barra">
-      <div class="numero">0</div>
-      
-    </div>
-  </div>
-<div class="cuadros">
-    <input class="cuadro" id="barra1" type="number">
-    <input class="cuadro" id="barra2" type="number">
-    <input class="cuadro" id="barra3" type="number">
-    <input class="cuadro" id="barra4" type="number">
-    <input class="cuadro" id="barra5" type="number">
 
-</div>
-  <div class="btn">
-    <button onclick="actualizarBarras()">Actualizar Barras</button>
+  <div class="contenedor">
+  <div>
+    <label for="estrella5">Esterlla 5</label> <input id="estrella5" type="number"><br>
+    <br><label for="estrella4">Esterlla 4</label> <input id="estrella4" type="number"><br>
+    <br><label for="estrella3">Esterlla 3</label> <input id="estrella3" type="number"><br>
+    <br><label for="estrella2">Esterlla 2</label> <input id="estrella2" type="number"><br>
+    <br><label for="estrella1">Esterlla 1</label> <input id="estrella1" type="number"><br>
+   
   </div>
+  <div class="btn">
+    <br><input id="valor" type="button" class="valor" value="Enviar" onclick="llenarBarras()">
+  </div>
+</div>
+
+<div id="starBars" class="sta-Bars">
+  <div class="progreso"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progreso"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progreso"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progreso"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progreso"></div>
+  <progress value="0" max="100"></progress>
+</div>
+   
 </body>
+    <script src="js/barra.js"></script>
 </html>
